@@ -339,10 +339,40 @@ body {
     text-align: center;
 }
 
+/* ヒーローセクションのクーポン */
+.hero-coupon {
+    margin: 2rem 0;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero-coupon .coupon-code {
+    background: linear-gradient(135deg, #fff 0%, #f7f7ff 100%);
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+}
+
 .coupon-label {
     font-size: 0.9rem;
     color: var(--text-light);
     margin-bottom: 0.5rem;
+}
+
+.hero-coupon .coupon-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-pink);
+    margin-bottom: 0.8rem;
 }
 
 .coupon-code {
@@ -370,6 +400,11 @@ body {
     color: var(--text-dark);
     letter-spacing: 0.1em;
     font-family: 'Courier New', monospace;
+}
+
+.hero-coupon .code-text {
+    font-size: 2rem;
+    color: var(--primary-orange);
 }
 
 .copy-button {
