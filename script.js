@@ -152,6 +152,87 @@ function initScrollAnimation() {
     });
 }
 
+// クーポンコードのコピー機能
+function initCouponCopy() {
+    const couponCode = document.getElementById('couponCode');
+    const copyButton = document.getElementById('copyButton');
+    const copyFeedback = document.getElementById('copyFeedback');
+    const codeText = document.querySelector('.code-text');
+    
+    if (!couponCode || !copyButton || !copyFeedback || !codeText) return;
+    
+    // クーポンコード全体をクリック可能にする
+    couponCode.addEventListener('click', copyToClipboard);
+    
+    // コピーボタンのクリックイベント（バブリングを防ぐ）
+    copyButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        copyToClipboard();
+    });
+    
+    function copyToClipboard() {
+        const code = codeText.textContent;
+        
+        // クリップボードにコピー
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            // 新しいClipboard API
+            navigator.clipboard.writeText(code).then(function() {
+                showCopyFeedback();
+            }).catch(function(err) {
+                // フォールバック
+                fallbackCopyToClipboard(code);
+            });
+        } else {
+            // 古いブラウザ向けのフォールバック
+            fallbackCopyToClipboard(code);
+        }
+    }
+    
+    function fallbackCopyToClipboard(text) {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.top = '0';
+        textArea.style.left = '0';
+        textArea.style.width = '2em';
+        textArea.style.height = '2em';
+        textArea.style.padding = '0';
+        textArea.style.border = 'none';
+        textArea.style.outline = 'none';
+        textArea.style.boxShadow = 'none';
+        textArea.style.background = 'transparent';
+        
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        
+        try {
+            document.execCommand('copy');
+            showCopyFeedback();
+        } catch (err) {
+            console.error('コピーに失敗しました:', err);
+        }
+        
+        document.body.removeChild(textArea);
+    }
+    
+    function showCopyFeedback() {
+        // フィードバックを表示
+        copyFeedback.classList.add('show');
+        
+        // ボタンのテキストを一時的に変更
+        const buttonText = copyButton.querySelector('.button-text');
+        const originalText = buttonText.textContent;
+        buttonText.textContent = 'コピー済み';
+        
+        // 2秒後に元に戻す
+        setTimeout(function() {
+            copyFeedback.classList.remove('show');
+            buttonText.textContent = originalText;
+        }, 2000);
+    }
+}
+
 // ページ読み込み時に実行
 document.addEventListener('DOMContentLoaded', function() {
     initCountdown();
@@ -160,6 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initCTATracking();
     initMobileMenu();
     initScrollAnimation();
+    initCouponCopy();
 });
 
 // モバイルメニュー用の追加CSS

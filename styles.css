@@ -29,7 +29,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    m
+    ax-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -329,6 +330,86 @@ body {
     color: var(--text-light);
     margin-bottom: 3rem;
     font-size: 1.1rem;
+}
+
+/* クーポンコード表示 */
+.coupon-container {
+    max-width: 400px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.coupon-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.coupon-code {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 2px dashed var(--primary-orange);
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.coupon-code:hover {
+    border-color: var(--primary-pink);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 157, 0.2);
+}
+
+.code-text {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark);
+    letter-spacing: 0.1em;
+    font-family: 'Courier New', monospace;
+}
+
+.copy-button {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-weight: 500;
+}
+
+.copy-button:hover {
+    transform: scale(1.05);
+}
+
+.copy-button:active {
+    transform: scale(0.95);
+}
+
+.button-text {
+    font-size: 0.9rem;
+}
+
+.copy-feedback {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--primary-teal);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.copy-feedback.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .course-grid {
