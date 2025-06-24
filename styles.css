@@ -341,8 +341,10 @@ body {
 
 /* ヒーローセクションのクーポン */
 .hero-coupon {
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 350px;
     animation: pulse 2s ease-in-out infinite;
+    padding: 0 1rem;
 }
 
 @keyframes pulse {
@@ -360,6 +362,8 @@ body {
 .hero-coupon .coupon-code {
     background: linear-gradient(135deg, #fff 0%, #f7f7ff 100%);
     box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .coupon-label {
@@ -406,6 +410,22 @@ body {
 .hero-coupon .code-text {
     font-size: 2rem;
     color: var(--primary-orange);
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+    .hero-coupon {
+        max-width: 320px;
+        margin: 1.5rem auto;
+    }
+    
+    .hero-coupon .code-text {
+        font-size: 1.6rem;
+    }
+    
+    .hero-coupon .coupon-label {
+        font-size: 1rem;
+    }
 }
 
 .copy-button {
