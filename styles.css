@@ -369,10 +369,14 @@ body {
 }
 
 .hero-coupon .coupon-label {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: var(--primary-pink);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 0.8rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .coupon-code {
