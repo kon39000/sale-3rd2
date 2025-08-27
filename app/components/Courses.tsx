@@ -8,9 +8,9 @@ const coursesData = [
     title: '初心者でもできる!ChatGPTでゼロからはじめるKindle出版:\nテーマ決め・文章作成・表紙デザイン完全攻略',
     instructor: {
       name: 'こん|AI Contents Labo',
-      avatar: 'https://furikousale3.vercel.app/images/kon_icon.jpg'
+      avatar: '/images/kon_icon.jpg'
     },
-    image: 'https://furikousale3.vercel.app/images/kon_kindle.jpg',
+    image: '/images/kon_kindle.jpg',
     rating: 4.3,
     reviewCount: 14,
     duration: '合計3時間',
@@ -32,9 +32,9 @@ const coursesData = [
     title: 'Claude Codeで始めるAIプログラミング入門:\nHTMLやPythonアプリをVibe Codingで自動生成',
     instructor: {
       name: 'けいすけ おおの',
-      avatar: 'https://furikousale3.vercel.app/images/keisuke_icon.png'
+      avatar: '/images/keisuke_icon.png'
     },
-    image: 'https://furikousale3.vercel.app/images/course-claude-code.webp',
+    image: '/images/course-claude-code.webp',
     rating: 4.4,
     reviewCount: 334,
     duration: '合計2時間',
@@ -56,9 +56,9 @@ const coursesData = [
     title: '【新常識】ChatGPT×SEO プロンプト開発マスター講座|\n脱・AIに奪われるブロガー・WebライターになるAI活用',
     instructor: {
       name: 'なべけん 田邉健',
-      avatar: 'https://furikousale3.vercel.app/images/nabeken.jpg'
+      avatar: '/images/nabeken.jpg'
     },
-    image: 'https://furikousale3.vercel.app/images/nabeken.webp',
+    image: '/images/nabeken.webp',
     rating: 4.5,
     reviewCount: 44,
     duration: '合計6時間',
@@ -80,9 +80,9 @@ const coursesData = [
     title: 'WhisperとChatGPTでできる!\n音声入力×AIで記事作成入門講座',
     instructor: {
       name: 'こん',
-      avatar: 'https://furikousale3.vercel.app/images/kon_icon.jpg'
+      avatar: '/images/kon_icon.jpg'
     },
-    image: 'https://furikousale3.vercel.app/images/kon_whisper.webp',
+    image: '/images/kon_whisper.webp',
     rating: 4.0,
     reviewCount: 4,
     duration: '合計1時間',
@@ -104,9 +104,9 @@ const coursesData = [
     title: 'Claude Codeと音声入力を活用したDiscord Bot開発講座\n〜タスクを自動化するバイブコーディング〜',
     instructor: {
       name: 'けいすけ おおの',
-      avatar: 'https://furikousale3.vercel.app/images/keisuke_icon.png'
+      avatar: '/images/keisuke_icon.png'
     },
-    image: 'https://furikousale3.vercel.app/images/discordbot.png',
+    image: '/images/discordbot.png',
     rating: 4.8,
     reviewCount: 20,
     duration: '合計3.5時間',
@@ -128,9 +128,9 @@ const coursesData = [
     title: '文系のためのWindsurfバイブライティング入門:\nAIエージェントのバイブコーディング「じゃない」使い方解説講座',
     instructor: {
       name: 'ウミノ & フリーランスの学校',
-      avatar: 'https://furikousale3.vercel.app/images/umino_icon.jpg'
+      avatar: '/images/umino_icon.jpg'
     },
-    image: 'https://furikousale3.vercel.app/images/windsurf_u.png',
+    image: '/images/windsurf_u.png',
     rating: 4.7,
     reviewCount: 161,
     duration: '合計2.5時間',

@@ -60,7 +60,7 @@ export default function Hero() {
           <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
             <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg">
               <img 
-                src="https://furikousale3.vercel.app/images/discordbot.png" 
+                src="/images/discordbot.png" 
                 alt="Claude Code Discord Bot開発講座" 
                 className="w-full object-contain"
               />
