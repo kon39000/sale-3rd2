@@ -51,15 +51,10 @@ export default function Reviews() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {reviewsData.map((review) => (
             <div key={review.id} className="bg-gray-50 rounded-xl p-4 sm:p-6 space-y-3 sm:space-y-4">
-              <div className="flex items-center space-x-3 sm:space-x-4">
-                <img 
-                  src={review.avatar} 
-                  alt={review.name}
-                  className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
-                />
+              <div className="flex items-center justify-between">
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-gray-900">{review.name}</h3>
-                  <div className="flex text-sm sm:text-base">
+                  <div className="flex text-sm sm:text-base mt-1">
                     {renderStars(review.rating)}
                   </div>
                 </div>
