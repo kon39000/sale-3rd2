@@ -4,30 +4,30 @@
 const reviewsData = [
   {
     id: 1,
-    name: '田中さん',
+    name: 'ココさん',
     avatar: 'https://readdy.ai/api/search-image?query=professional%20japanese%20business%20person%20headshot%20portrait%20clean%20background%20modern%20corporate%20style&width=80&height=80&seq=review-avatar-001&orientation=squarish',
     rating: 5,
-    course: 'ChatGPT×Kindle出版講座',
-    comment: 'ChatGPTを使ってKindle本を出版することができました。初心者でも分かりやすい内容で、実際に収益も得られています。',
-    date: '2024年8月'
+    course: 'ChatGPT×SEO プロンプト開発マスター講座',
+    comment: '正直、AIの前に「SEOライティング」の講義だけでも、受講する価値は十分にありました。SNSやブログで見よう見まねで使っていたシステムプロンプトも、実は全然理解できていなかった ことに気づかされました。表面をなぞっていただけで、本質は見えていなかった と実感。特に、AI開発を本気でやるなら「ゼロからちゃんと学ぶ必要がある」と気づけたのは大きな収穫です。そのうえで提供される特典も非常に実用的で魅力に感じました。',
+    date: '4日前'
   },
   {
     id: 2,
-    name: '佐藤さん',
+    name: 'Go U.さん',
     avatar: 'https://readdy.ai/api/search-image?query=professional%20japanese%20business%20woman%20headshot%20portrait%20clean%20background%20modern%20corporate%20style&width=80&height=80&seq=review-avatar-002&orientation=squarish',
     rating: 5,
-    course: 'Claude Code AIプログラミング入門',
-    comment: 'プログラミング未経験でしたが、Claude Codeのおかげで簡単なアプリを作ることができました。AI時代の新しいスキルが身につきました。',
-    date: '2024年8月'
+    course: 'Claude Codeで始めるAIプログラミング入門',
+    comment: 'なんでも作れるというのは前評判で聞いていたが、実際の作り方を説明するようなソースはなかった為、大変役に立った。且つ面白い。',
+    date: '3日前'
   },
   {
     id: 3,
-    name: '山田さん',
+    name: 'Ss Y.さん',
     avatar: 'https://readdy.ai/api/search-image?query=professional%20japanese%20freelancer%20headshot%20portrait%20clean%20background%20modern%20creative%20style&width=80&height=80&seq=review-avatar-003&orientation=squarish',
     rating: 5,
-    course: 'ChatGPT×SEOマスター講座',
-    comment: 'SEOライティングの効率が3倍になりました。ChatGPTを使った記事作成のテクニックが非常に実践的でした。',
-    date: '2024年7月'
+    course: 'ChatGPT×SEO プロンプト開発マスター講座',
+    comment: 'ライター初心者です。AIはこれから勉強したいと思って受講してみました が、私にとってはSEOライティングについてとても勉強になりました。動画の中でもおっしゃっていましたが、初心者の方にも本当におすすめです！',
+    date: '3日前'
   }
 ];
 
