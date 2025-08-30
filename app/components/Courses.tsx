@@ -146,6 +146,30 @@ const coursesData = [
     ],
     badge: 'ベストセラー',
     url: 'https://www.udemy.com/course/vibe-writing/?couponCode=20250901'
+  },
+  {
+    id: 7,
+    title: 'Photoshopいらず！nano-bananaで写真合成&デザイン素材を作ろう',
+    instructor: {
+      name: 'こん｜AI Contents Labo, フリーランスの学校',
+      avatar: '/images/kon_icon.jpg'
+    },
+    image: '/images/photoshop-nanobanana.png',
+    rating: 0.0,
+    reviewCount: 0,
+    duration: '合計1時間',
+    lectures: '7本',
+    level: '初級',
+    originalPrice: '¥15,800',
+    salePrice: '¥1,300',
+    features: [
+      '初心者でもスマホでできる！AI画像編集',
+      'nano-bananaで写真を合成・着せ替え',
+      'デザイン素材の作成テクニック',
+      'Photoshop不要の画像加工術'
+    ],
+    badge: '新講座',
+    url: 'https://www.udemy.com/course/nanobanana/?couponCode=20250901'
   }
 ];
 
