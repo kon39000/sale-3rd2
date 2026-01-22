@@ -1,0 +1,26 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Subtle sparkle/dust overlay for dark background */
+@keyframes sparkleMove {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 200px 0, 0 200px, -150px -150px;
+  }
+}
+
+.sparkle-overlay {
+  /* three layers of tiny dots with different sizes/opacities */
+  background-image:
+    radial-gradient(rgba(255, 215, 0, 0.10) 1px, transparent 1.5px),
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1.5px),
+    radial-gradient(rgba(255, 215, 0, 0.06) 2px, transparent 2.5px);
+  background-size: 28px 28px, 32px 32px, 56px 56px;
+  background-position: 0 0, 14px 14px, 28px 28px;
+  animation: sparkleMove 30s linear infinite;
+  opacity: 0.55;
+}
