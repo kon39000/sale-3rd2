@@ -14,13 +14,25 @@
   }
 }
 
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
 .snow-overlay {
   background-image:
-    radial-gradient(rgba(255, 255, 255, 0.25) 2px, transparent 2.5px),
-    radial-gradient(rgba(255, 255, 255, 0.20) 1.5px, transparent 2px),
-    radial-gradient(rgba(255, 255, 255, 0.15) 2.5px, transparent 3px);
-  background-size: 550px 550px, 400px 400px, 300px 300px;
+    radial-gradient(rgba(255, 255, 255, 0.9) 3.5px, transparent 4.5px),
+    radial-gradient(rgba(255, 255, 255, 0.8) 2.5px, transparent 3.5px),
+    radial-gradient(rgba(200, 240, 255, 0.8) 4px, transparent 5px);
+  background-size: 500px 500px, 350px 350px, 250px 250px;
   background-position: 0 0, 20px 40px, 40px 80px;
-  animation: snowfall 20s linear infinite;
-  opacity: 0.6;
+  animation: snowfall 15s linear infinite, twinkle 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 2px white);
 }

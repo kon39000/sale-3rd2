@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen bg-slate-950 pt-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,255,255,0.15),transparent_60%)]"></div>
-      <div className="absolute inset-0 snow-overlay opacity-50"></div>
+      <div className="absolute inset-0 snow-overlay"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
