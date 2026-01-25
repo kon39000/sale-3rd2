@@ -252,7 +252,7 @@ export default function Courses() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">セール対象コース</h2>
-          <p className="text-lg sm:text-xl text-amber-300">すべての講座がセール特価 {SALE_PRICE_DISPLAY}</p>
+          <p className="text-lg sm:text-xl text-cyan-300">すべての講座がセール特価 {SALE_PRICE_DISPLAY}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">

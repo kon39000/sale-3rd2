@@ -29,35 +29,34 @@ export default function CourseCard({ course }: CourseCardProps) {
     const stars = [];
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 !== 0;
-    
+
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<span key={i} className="text-yellow-400">★</span>);
+      stars.push(<span key={i} className="text-cyan-400">★</span>);
     }
-    
+
     if (hasHalfStar) {
-      stars.push(<span key="half" className="text-yellow-400">☆</span>);
+      stars.push(<span key="half" className="text-cyan-400">☆</span>);
     }
-    
+
     const emptyStars = 5 - Math.ceil(rating);
     for (let i = 0; i < emptyStars; i++) {
       stars.push(<span key={`empty-${i}`} className="text-gray-300">☆</span>);
     }
-    
+
     return stars;
   };
 
   return (
     <article className="bg-zinc-900 border border-zinc-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <div className="relative">
-        <img 
-          src={course.image} 
+        <img
+          src={course.image}
           alt={course.title}
           className="w-full h-40 sm:h-48 object-cover object-top"
         />
         {course.badge && (
-          <div className={`absolute top-3 left-3 sm:top-4 sm:left-4 px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium ${
-            (course.badge === 'ベストセラー' || course.badge === '最高評価') ? 'bg-amber-400 text-black' : 'bg-emerald-500 text-black'
-          }`}>
+          <div className={`absolute top-3 left-3 sm:top-4 sm:left-4 px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium ${(course.badge === 'ベストセラー' || course.badge === '最高評価') ? 'bg-cyan-400 text-black' : 'bg-emerald-500 text-black'
+            }`}>
             {course.badge}
           </div>
         )}
@@ -74,8 +73,8 @@ export default function CourseCard({ course }: CourseCardProps) {
         </h3>
 
         <div className="flex items-center space-x-2 sm:space-x-3">
-          <img 
-            src={course.instructor.avatar} 
+          <img
+            src={course.instructor.avatar}
             alt={course.instructor.name}
             className="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0"
           />
@@ -117,7 +116,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         <div className="flex items-center justify-between pt-3 sm:pt-4 border-t">
           <div className="space-x-1 sm:space-x-2">
             <span className="text-base sm:text-lg text-gray-400 line-through">{course.originalPrice}</span>
-            <span className="text-xl sm:text-2xl font-bold text-amber-300">{course.salePrice}</span>
+            <span className="text-xl sm:text-2xl font-bold text-cyan-300">{course.salePrice}</span>
           </div>
         </div>
 
@@ -126,11 +125,11 @@ export default function CourseCard({ course }: CourseCardProps) {
             クーポン準備中
           </div>
         ) : (
-          <a 
+          <a
             href={course.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-amber-400 text-black text-center py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-amber-500 transition-colors cursor-pointer whitespace-nowrap"
+            className="block w-full bg-cyan-400 text-black text-center py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-cyan-500 transition-colors cursor-pointer whitespace-nowrap"
           >
             セール価格で申し込む
           </a>

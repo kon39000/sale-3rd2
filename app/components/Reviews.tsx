@@ -34,7 +34,7 @@ const reviewsData = [
 export default function Reviews() {
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
-      <span key={i} className={`${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}>
+      <span key={i} className={`${i < rating ? 'text-cyan-400' : 'text-gray-300'}`}>
         ★
       </span>
     ));
@@ -60,7 +60,7 @@ export default function Reviews() {
                 </div>
               </div>
 
-              <div className="text-xs sm:text-sm font-medium text-amber-300 bg-black border border-amber-400/40 px-2 py-1 sm:px-3 sm:py-1 rounded-full inline-block">
+              <div className="text-xs sm:text-sm font-medium text-cyan-300 bg-black border border-cyan-400/40 px-2 py-1 sm:px-3 sm:py-1 rounded-full inline-block">
                 {review.course}
               </div>
 

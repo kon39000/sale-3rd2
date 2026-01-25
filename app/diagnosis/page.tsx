@@ -346,12 +346,12 @@ export default function DiagnosisPage() {
       <div className="border-b border-zinc-800 bg-black/90 backdrop-blur sticky top-0 z-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-baseline gap-1 sm:gap-2">
-            <span className="text-amber-400 font-['Pacifico'] text-xl">フリ校Udemy</span>
+            <span className="text-cyan-400 font-['Pacifico'] text-xl">フリ校Udemy</span>
             <span className="text-xs sm:text-sm text-gray-300">AI講座ぴったり診断</span>
           </div>
           <Link
             href="/"
-            className="text-xs sm:text-sm text-gray-300 hover:text-amber-400 border border-zinc-700 hover:border-amber-400 rounded-full px-3 py-1 transition-colors self-start sm:self-auto"
+            className="text-xs sm:text-sm text-gray-300 hover:text-cyan-400 border border-zinc-700 hover:border-cyan-400 rounded-full px-3 py-1 transition-colors self-start sm:self-auto"
           >
             セールLPを見る
           </Link>
@@ -362,7 +362,7 @@ export default function DiagnosisPage() {
         <section className="mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">
             5つの質問でわかる、
-            <span className="text-amber-300"> あなたにぴったりなAI講座診断</span>
+            <span className="text-cyan-300"> あなたにぴったりなAI講座診断</span>
           </h1>
           <div className="mb-5 sm:mb-6">
             <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl border border-zinc-800 bg-white">
@@ -378,7 +378,7 @@ export default function DiagnosisPage() {
           </div>
           <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
             「どの講座を選べばいいかわからない…」という方のために、今回のセール対象講座の中から
-            <span className="text-amber-300 font-semibold"> あなたの目的に合った講座</span>
+            <span className="text-cyan-300 font-semibold"> あなたの目的に合った講座</span>
             をタイプ別におすすめします。5つの質問に直感で答えるだけで、ぴったりなコースがわかります。
           </p>
         </section>
@@ -398,11 +398,10 @@ export default function DiagnosisPage() {
                       <label
                         key={option.value}
                         htmlFor={inputId}
-                        className={`flex items-start space-x-3 rounded-lg border px-3 py-2 sm:px-4 sm:py-3 cursor-pointer transition-colors ${
-                          checked
-                            ? 'border-amber-400 bg-amber-400/10'
-                            : 'border-zinc-700 bg-black/40 hover:border-amber-300/70 hover:bg-zinc-900/60'
-                        }`}
+                        className={`flex items-start space-x-3 rounded-lg border px-3 py-2 sm:px-4 sm:py-3 cursor-pointer transition-colors ${checked
+                            ? 'border-cyan-400 bg-cyan-400/10'
+                            : 'border-zinc-700 bg-black/40 hover:border-cyan-300/70 hover:bg-zinc-900/60'
+                          }`}
                       >
                         <div className="pt-1">
                           <input
@@ -412,7 +411,7 @@ export default function DiagnosisPage() {
                             value={option.value}
                             checked={checked}
                             onChange={() => handleAnswerChange(question.id, option.value)}
-                            className="w-4 h-4 text-amber-400 border-zinc-600 bg-black focus:ring-amber-400"
+                            className="w-4 h-4 text-cyan-400 border-zinc-600 bg-black focus:ring-cyan-400"
                           />
                         </div>
                         <div>
@@ -433,7 +432,7 @@ export default function DiagnosisPage() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-amber-400 text-black font-semibold text-sm sm:text-base hover:bg-amber-500 transition-colors w-full sm:w-auto"
+                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-cyan-400 text-black font-semibold text-sm sm:text-base hover:bg-cyan-500 transition-colors w-full sm:w-auto"
               >
                 診断結果を表示する
               </button>
@@ -450,12 +449,12 @@ export default function DiagnosisPage() {
 
         <section id="diagnosis-result" className="mb-12 sm:mb-16">
           {resultType ? (
-            <div className="bg-gradient-to-br from-amber-500/20 via-zinc-900 to-black border border-amber-400/60 rounded-2xl p-5 sm:p-7">
-              <p className="text-xs sm:text-sm text-amber-200 mb-2 font-semibold tracking-wide">診断結果</p>
-              <h2 className="text-2xl sm:text-3xl font-bold text-amber-300 mb-2">
+            <div className="bg-gradient-to-br from-cyan-500/20 via-zinc-900 to-black border border-cyan-400/60 rounded-2xl p-5 sm:p-7">
+              <p className="text-xs sm:text-sm text-cyan-200 mb-2 font-semibold tracking-wide">診断結果</p>
+              <h2 className="text-2xl sm:text-3xl font-bold text-cyan-300 mb-2">
                 {typeConfigs[resultType].label}
               </h2>
-              <p className="text-sm sm:text-base text-amber-100 mb-4 sm:mb-5">
+              <p className="text-sm sm:text-base text-cyan-100 mb-4 sm:mb-5">
                 {typeConfigs[resultType].catchphrase}
               </p>
               <p className="text-sm sm:text-base text-gray-100 mb-6 sm:mb-8 leading-relaxed">
@@ -471,11 +470,11 @@ export default function DiagnosisPage() {
                       href={course.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block rounded-xl border border-zinc-700 bg-black/60 hover:border-amber-400/80 hover:bg-zinc-900/80 transition-colors p-4 sm:p-5"
+                      className="block rounded-xl border border-zinc-700 bg-black/60 hover:border-cyan-400/80 hover:bg-zinc-900/80 transition-colors p-4 sm:p-5"
                     >
                       <h4 className="text-sm sm:text-base font-semibold mb-2 text-white">{course.title}</h4>
                       <p className="text-xs sm:text-sm text-gray-300 mb-3">{course.description}</p>
-                      <div className="inline-flex items-center text-xs sm:text-sm font-medium text-black bg-amber-400 px-3 py-1.5 rounded-full">
+                      <div className="inline-flex items-center text-xs sm:text-sm font-medium text-black bg-cyan-400 px-3 py-1.5 rounded-full">
                         クーポン適用で講座ページを見る
                       </div>
                     </a>
@@ -490,7 +489,7 @@ export default function DiagnosisPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <Link
                     href="/"
-                    className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white text-black font-semibold text-sm sm:text-base hover:bg-amber-100 transition-colors w-full sm:w-auto"
+                    className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white text-black font-semibold text-sm sm:text-base hover:bg-cyan-100 transition-colors w-full sm:w-auto"
                   >
                     すべてのセール講座を一覧で見る
                   </Link>

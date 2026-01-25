@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-amber-400 to-yellow-500 text-black py-8 sm:py-12">
+    <footer className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black py-8 sm:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
@@ -13,7 +13,7 @@ export default function Footer() {
               代表者：村上 周平
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">リンク</h4>
             <ul className="space-y-2 text-sm sm:text-base">
@@ -22,7 +22,7 @@ export default function Footer() {
               <li><a href="https://freelance-gakkou.com/lp/how-to-freelance-2/" target="_blank" className="text-black/80 hover:text-black transition-colors">無料メルマガ登録</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">SNS</h4>
             <div className="flex space-x-4">
@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-black/20 pt-6 sm:pt-8 text-center">
           <p className="text-xs sm:text-sm text-black/80">
             © 2026 フリーランスの学校. All rights reserved.

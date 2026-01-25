@@ -71,7 +71,7 @@ export default function Apply() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white space-y-6 sm:space-y-8">
           <h2 className="text-3xl sm:text-4xl font-bold">今すぐコースを選んで申し込む</h2>
-          <p className="text-lg sm:text-xl">{SALE_NAME}特別価格！全コースが <span className="text-amber-300 font-bold">{SALE_PRICE_DISPLAY}</span></p>
+          <p className="text-lg sm:text-xl">{SALE_NAME}特別価格！全コースが <span className="text-cyan-300 font-bold">{SALE_PRICE_DISPLAY}</span></p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-12">
             {ctaButtons.map((button, index) => (
@@ -79,14 +79,14 @@ export default function Apply() {
                 key={index}
                 href={button.url}
                 target="_blank"
-                rel="noopener noreferrer"  
+                rel="noopener noreferrer"
                 className="bg-zinc-900 border border-zinc-800 text-white rounded-xl p-4 sm:p-6 hover:bg-zinc-800 transition-colors cursor-pointer space-y-2 sm:space-y-3"
               >
                 <h3 className="text-base sm:text-lg font-bold leading-tight">{button.title}</h3>
                 <p className="text-xs sm:text-sm">
-                  通常価格 {button.originalPrice} → <span className="text-amber-300 font-bold">{button.salePrice}</span>
+                  通常価格 {button.originalPrice} → <span className="text-cyan-300 font-bold">{button.salePrice}</span>
                 </p>
-                <div className="bg-amber-400 text-black px-3 py-2 sm:px-4 rounded-lg text-sm font-medium text-center whitespace-nowrap">
+                <div className="bg-cyan-400 text-black px-3 py-2 sm:px-4 rounded-lg text-sm font-medium text-center whitespace-nowrap">
                   セール価格で申し込む
                 </div>
               </a>
