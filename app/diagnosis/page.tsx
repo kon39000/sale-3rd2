@@ -342,8 +342,8 @@ export default function DiagnosisPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <div className="border-b border-zinc-800 bg-black/90 backdrop-blur sticky top-0 z-40">
+    <div className="min-h-screen bg-slate-950 text-white">
+      <div className="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-baseline gap-1 sm:gap-2">
             <span className="text-cyan-400 font-['Pacifico'] text-xl">フリ校Udemy</span>
@@ -351,7 +351,7 @@ export default function DiagnosisPage() {
           </div>
           <Link
             href="/"
-            className="text-xs sm:text-sm text-gray-300 hover:text-cyan-400 border border-zinc-700 hover:border-cyan-400 rounded-full px-3 py-1 transition-colors self-start sm:self-auto"
+            className="text-xs sm:text-sm text-gray-300 hover:text-cyan-400 border border-slate-700 hover:border-cyan-400 rounded-full px-3 py-1 transition-colors self-start sm:self-auto"
           >
             セールLPを見る
           </Link>
@@ -365,7 +365,7 @@ export default function DiagnosisPage() {
             <span className="text-cyan-300"> あなたにぴったりなAI講座診断</span>
           </h1>
           <div className="mb-5 sm:mb-6">
-            <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl border border-zinc-800 bg-white">
+            <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl border border-slate-800 bg-white">
               <Image
                 src="/images/ai-course-diagnosis.png"
                 alt="AI Course Diagnosis のイメージイラスト"
@@ -383,10 +383,10 @@ export default function DiagnosisPage() {
           </p>
         </section>
 
-        <section className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-4 sm:p-6 mb-10 sm:mb-12">
+        <section className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 sm:p-6 mb-10 sm:mb-12">
           <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
             {questions.map((question) => (
-              <div key={question.id} className="border border-zinc-800 rounded-xl p-4 sm:p-5 bg-black/40">
+              <div key={question.id} className="border border-slate-800 rounded-xl p-4 sm:p-5 bg-slate-950/40">
                 <h2 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
                   Q{question.id}. {question.title}
                 </h2>
@@ -399,8 +399,8 @@ export default function DiagnosisPage() {
                         key={option.value}
                         htmlFor={inputId}
                         className={`flex items-start space-x-3 rounded-lg border px-3 py-2 sm:px-4 sm:py-3 cursor-pointer transition-colors ${checked
-                            ? 'border-cyan-400 bg-cyan-400/10'
-                            : 'border-zinc-700 bg-black/40 hover:border-cyan-300/70 hover:bg-zinc-900/60'
+                          ? 'border-cyan-400 bg-cyan-400/10'
+                          : 'border-zinc-700 bg-black/40 hover:border-cyan-300/70 hover:bg-zinc-900/60'
                           }`}
                       >
                         <div className="pt-1">
@@ -411,7 +411,7 @@ export default function DiagnosisPage() {
                             value={option.value}
                             checked={checked}
                             onChange={() => handleAnswerChange(question.id, option.value)}
-                            className="w-4 h-4 text-cyan-400 border-zinc-600 bg-black focus:ring-cyan-400"
+                            className="w-4 h-4 text-cyan-400 border-slate-600 bg-slate-950 focus:ring-cyan-400"
                           />
                         </div>
                         <div>
@@ -439,7 +439,7 @@ export default function DiagnosisPage() {
               <button
                 type="button"
                 onClick={handleReset}
-                className="inline-flex items-center justify-center px-4 py-2 rounded-full border border-zinc-700 text-xs sm:text-sm text-gray-300 hover:border-zinc-500 hover:text-white transition-colors w-full sm:w-auto"
+                className="inline-flex items-center justify-center px-4 py-2 rounded-full border border-slate-700 text-xs sm:text-sm text-gray-300 hover:border-slate-500 hover:text-white transition-colors w-full sm:w-auto"
               >
                 回答をリセットする
               </button>
@@ -449,7 +449,7 @@ export default function DiagnosisPage() {
 
         <section id="diagnosis-result" className="mb-12 sm:mb-16">
           {resultType ? (
-            <div className="bg-gradient-to-br from-cyan-500/20 via-zinc-900 to-black border border-cyan-400/60 rounded-2xl p-5 sm:p-7">
+            <div className="bg-gradient-to-br from-cyan-500/20 via-slate-900 to-slate-950 border border-cyan-400/60 rounded-2xl p-5 sm:p-7">
               <p className="text-xs sm:text-sm text-cyan-200 mb-2 font-semibold tracking-wide">診断結果</p>
               <h2 className="text-2xl sm:text-3xl font-bold text-cyan-300 mb-2">
                 {typeConfigs[resultType].label}
@@ -470,7 +470,7 @@ export default function DiagnosisPage() {
                       href={course.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block rounded-xl border border-zinc-700 bg-black/60 hover:border-cyan-400/80 hover:bg-zinc-900/80 transition-colors p-4 sm:p-5"
+                      className="block rounded-xl border border-slate-700 bg-slate-950/60 hover:border-cyan-400/80 hover:bg-slate-900/80 transition-colors p-4 sm:p-5"
                     >
                       <h4 className="text-sm sm:text-base font-semibold mb-2 text-white">{course.title}</h4>
                       <p className="text-xs sm:text-sm text-gray-300 mb-3">{course.description}</p>
@@ -482,7 +482,7 @@ export default function DiagnosisPage() {
                 </div>
               </div>
 
-              <div className="mt-8 sm:mt-10 border-t border-zinc-800 pt-5 sm:pt-6">
+              <div className="mt-8 sm:mt-10 border-t border-slate-800 pt-5 sm:pt-6">
                 <p className="text-xs sm:text-sm text-gray-300 mb-3">
                   「他の講座も比較して選びたい」「別のジャンルも気になる」という方は、セールLPで全講座をチェックできます。
                 </p>
@@ -496,7 +496,7 @@ export default function DiagnosisPage() {
                   <button
                     type="button"
                     onClick={handleReset}
-                    className="inline-flex items-center justify-center px-4 py-2 rounded-full border border-zinc-700 text-xs sm:text-sm text-gray-300 hover:border-zinc-500 hover:text-white transition-colors w-full sm:w-auto"
+                    className="inline-flex items-center justify-center px-4 py-2 rounded-full border border-slate-700 text-xs sm:text-sm text-gray-300 hover:border-slate-500 hover:text-white transition-colors w-full sm:w-auto"
                   >
                     もう一度診断する
                   </button>

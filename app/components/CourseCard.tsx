@@ -47,7 +47,7 @@ export default function CourseCard({ course }: CourseCardProps) {
   };
 
   return (
-    <article className="bg-zinc-900 border border-zinc-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <article className="bg-slate-900 border border-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <div className="relative">
         <img
           src={course.image}

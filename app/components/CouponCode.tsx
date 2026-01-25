@@ -15,10 +15,10 @@ export default function CouponCode() {
   };
 
   return (
-    <div className="bg-black border border-cyan-400/40 rounded-2xl p-4 sm:p-6 text-center">
+    <div className="bg-slate-950 border border-cyan-400/40 rounded-2xl p-4 sm:p-6 text-center">
       <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-cyan-300">クーポンコード</h3>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-        <div className="bg-zinc-900 px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-mono font-bold text-lg sm:text-xl border-2 border-dashed border-cyan-400 text-cyan-300">
+        <div className="bg-slate-900 px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-mono font-bold text-lg sm:text-xl border-2 border-dashed border-cyan-400 text-cyan-300">
           {couponCode}
         </div>
         <button

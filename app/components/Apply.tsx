@@ -67,7 +67,7 @@ const ctaButtons = [
 
 export default function Apply() {
   return (
-    <section id="apply" className="py-12 sm:py-16 lg:py-20 bg-black border-t border-zinc-800">
+    <section id="apply" className="py-12 sm:py-16 lg:py-20 bg-slate-950 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white space-y-6 sm:space-y-8">
           <h2 className="text-3xl sm:text-4xl font-bold">今すぐコースを選んで申し込む</h2>
@@ -80,7 +80,7 @@ export default function Apply() {
                 href={button.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-zinc-900 border border-zinc-800 text-white rounded-xl p-4 sm:p-6 hover:bg-zinc-800 transition-colors cursor-pointer space-y-2 sm:space-y-3"
+                className="bg-slate-900 border border-slate-800 text-white rounded-xl p-4 sm:p-6 hover:bg-slate-800 transition-colors cursor-pointer space-y-2 sm:space-y-3"
               >
                 <h3 className="text-base sm:text-lg font-bold leading-tight">{button.title}</h3>
                 <p className="text-xs sm:text-sm">

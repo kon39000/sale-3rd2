@@ -8,9 +8,9 @@ import { SALE_NAME, SALE_PRICE_DISPLAY, COUPON_CODE } from '@/app/config';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-black pt-16 relative overflow-hidden">
+    <section className="min-h-screen bg-slate-950 pt-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,255,255,0.15),transparent_60%)]"></div>
-      <div className="absolute inset-0 sparkle-overlay opacity-50"></div>
+      <div className="absolute inset-0 snow-overlay opacity-50"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -26,8 +26,9 @@ export default function Hero() {
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 フリ校Udemy講座<br />
-                <span className="bg-gradient-to-r from-cyan-200 via-sky-400 to-blue-500 bg-clip-text text-transparent">
-                  {SALE_NAME}
+                <span className="bg-gradient-to-r from-cyan-200 via-sky-400 to-blue-500 bg-clip-text text-transparent block mt-2">
+                  寒さに負けるな！<br />
+                  冬の学び大セール
                 </span>
               </h1>
 
