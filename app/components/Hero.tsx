@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="min-h-screen bg-black pt-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,215,0,0.08),transparent_60%)]"></div>
       <div className="absolute inset-0 sparkle-overlay opacity-50"></div>
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-white space-y-6 lg:space-y-8 text-center lg:text-left">
@@ -19,7 +19,7 @@ export default function Hero() {
               <div className="inline-block bg-amber-400/10 border border-amber-400/40 px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium text-amber-300">
                 今年最大の特別割引！
               </div>
-              
+
               <div className="inline-block bg-gradient-to-r from-amber-300 to-yellow-500 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-bold">
                 {SALE_NAME}
               </div>
@@ -51,8 +51,8 @@ export default function Hero() {
             <CountdownTimer />
             {COUPON_CODE && <CouponCode />}
 
-            <a 
-              href="#courses" 
+            <a
+              href="#courses"
               className="inline-block bg-gradient-to-r from-amber-300 to-yellow-500 text-black px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-lg sm:text-xl font-bold hover:from-amber-200 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap"
             >
               今すぐコースを見る
@@ -61,9 +61,9 @@ export default function Hero() {
 
           <div className="flex justify-center lg:justify-end mt-10 lg:mt-0">
             <div className="relative w-full max-w-sm sm:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
-              <img 
-                src="/images/sora2.png" 
-                alt="セール対象コースのサムネイルイメージ" 
+              <img
+                src="/images/antigravity-chrome-extensions.jpg"
+                alt="AntigravityではじめるChrome拡張開発入門！AI連携・自動操作もやさしく解説"
                 className="w-full h-auto object-contain rounded-3xl shadow-2xl ring-1 ring-amber-400/30"
               />
               <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-amber-400 rounded-full flex items-center justify-center">
