@@ -11,7 +11,7 @@ export const contentType = 'image/png';
 
 function fmtRange(startIso: string, endIso: string): string {
   try {
-    const youbi = ['日','月','火','水','木','金','土'];
+    const youbi = ['日', '月', '火', '水', '木', '金', '土'];
     const s = new Date(startIso);
     const e = new Date(endIso);
     const sStr = `${s.getMonth() + 1}/${s.getDate()}(${youbi[s.getDay()]}) ${String(s.getHours()).padStart(2, '0')}:${String(s.getMinutes()).padStart(2, '0')}`;
@@ -34,7 +34,7 @@ export default function Image() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          background: 'linear-gradient(135deg, #0b0f1a 0%, #111827 40%, #1f2937 100%)',
+          background: 'linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%)',
           padding: 60,
           color: '#fff',
         }}
@@ -44,8 +44,8 @@ export default function Image() {
             style={{
               fontSize: 42,
               fontWeight: 700,
-              color: '#fbbf24',
-              border: '2px solid #fbbf24',
+              color: '#22d3ee',
+              border: '2px solid #22d3ee',
               padding: '10px 18px',
               borderRadius: 9999,
               display: 'flex',
@@ -58,7 +58,7 @@ export default function Image() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           <div style={{ fontSize: 64, fontWeight: 800, lineHeight: 1.2, display: 'flex' }}>Udemy講座セール開催中</div>
-          <div style={{ fontSize: 36, color: '#fbbf24', fontWeight: 700, display: 'flex' }}>全講座 {SALE_PRICE_DISPLAY}</div>
+          <div style={{ fontSize: 36, color: '#22d3ee', fontWeight: 700, display: 'flex' }}>全講座 {SALE_PRICE_DISPLAY}</div>
           {range && (
             <div style={{ fontSize: 28, color: '#e5e7eb', display: 'flex' }}>開催期間: {range}</div>
           )}
