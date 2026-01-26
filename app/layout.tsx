@@ -30,14 +30,8 @@ export const metadata: Metadata = {
     description: "寒さに負けるな！冬の学び大セール。ChatGPT活用講座からChrome拡張開発まで全て1,300円で学べる特別セール",
     url: "/",
     siteName: "フリーランスの学校",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "フリ校Udemy講座 冬の学び大セール",
-      },
-    ],
+    siteName: "フリーランスの学校",
+    locale: "ja_JP",
     locale: "ja_JP",
     type: "website",
   },
@@ -45,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "【冬の学び大セール】フリ校Udemy講座 - 全講座1,300円！",
     description: "寒さに負けるな！冬の学び大セール。ChatGPT活用講座からChrome拡張開発まで全て1,300円で学べる特別セール",
-    images: ["/twitter-image"],
+    description: "寒さに負けるな！冬の学び大セール。ChatGPT活用講座からChrome拡張開発まで全て1,300円で学べる特別セール",
     site: "@furikoubot",
   },
   icons: {
