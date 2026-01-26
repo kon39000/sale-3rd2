@@ -16,36 +16,55 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-white space-y-6 lg:space-y-8 text-center lg:text-left">
             <div className="space-y-3 lg:space-y-4">
-              <div className="inline-block bg-cyan-400/10 border border-cyan-400/40 px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium text-cyan-300">
-                今年最大の特別割引！
-              </div>
-
               <div className="inline-block bg-gradient-to-r from-cyan-300 to-blue-500 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-bold">
                 {SALE_NAME}
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                フリ校Udemy講座<br />
-                <span className="bg-gradient-to-r from-cyan-200 via-sky-400 to-blue-500 bg-clip-text text-transparent block mt-2">
-                  寒さに負けるな！<br />
-                  冬の学び大セール
+                働き方を広げる<br />
+                <span className="bg-gradient-to-r from-cyan-200 via-sky-400 to-blue-500 bg-clip-text text-transparent mt-2 block">
+                  10講座まとめセール
                 </span>
               </h1>
-
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 leading-relaxed">
-                ChatGPT・SEO・Discord Bot開発まで<br className="hidden sm:block" />
-                いまだけ全講座 <span className="text-cyan-300 font-bold">{SALE_PRICE_DISPLAY}</span>（Udemyセール価格）
+              <p className="text-lg sm:text-xl font-bold text-white leading-relaxed">
+                ── スキルを掛け合わせて「自分の仕事力」を手に入れる
               </p>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 space-y-3 sm:space-y-4">
-                <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-                  <span className="bg-cyan-400 text-black px-3 py-2 sm:px-4 rounded-full text-sm sm:text-lg font-bold whitespace-nowrap">
-                    全講座セール中！
-                  </span>
-                  <span className="bg-black border border-cyan-400 text-cyan-300 px-3 py-2 sm:px-4 rounded-full text-sm sm:text-lg font-bold whitespace-nowrap">
-                    最大95%オフ
-                  </span>
+              <p className="text-base sm:text-lg text-gray-200 leading-relaxed mb-4">
+                ChatGPT・SEO・AI開発など実践講座が今だけ最安 <span className="text-cyan-300 font-bold">{SALE_PRICE_DISPLAY}</span>。<br />
+                未経験からでもフリーランスの選択肢をつくる力を育てる、特別セール開催中！
+              </p>
+
+              <div className="bg-slate-900/50 border border-slate-700 rounded-2xl p-4 sm:p-6 mb-6">
+                <p className="text-sm sm:text-base text-gray-300 mb-3">
+                  スキルを掛け合わせて収益と効率化を実現する10講座。<br />
+                  いま学んでいる講座と組み合わせることで、
+                </p>
+                <div className="bg-slate-950/50 rounded-lg p-3 sm:p-4 mb-3 border border-slate-800">
+                  <ul className="space-y-2 text-sm sm:text-lg font-bold text-cyan-200">
+                    <li className="flex items-center gap-2">
+                      <i className="ri-checkbox-circle-fill text-cyan-400"></i> 収益に直結する力
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <i className="ri-checkbox-circle-fill text-cyan-400"></i> 仕事の効率化
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <i className="ri-checkbox-circle-fill text-cyan-400"></i> 未経験からのスタート
+                    </li>
+                  </ul>
                 </div>
+                <p className="text-sm sm:text-base text-white font-bold">
+                  を一気に加速させます。
+                </p>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-lg sm:text-xl font-bold text-cyan-300">
+                  今だけ全講座 {SALE_PRICE_DISPLAY}！
+                </p>
+                <p className="text-base sm:text-lg text-gray-200">
+                  あなたの未来を変える学びを手に入れるラストチャンス
+                </p>
               </div>
             </div>
 
