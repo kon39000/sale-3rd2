@@ -256,7 +256,7 @@ const typeConfigs: Record<TypeKey, TypeConfig> = {
       'サムネイルやバナー、資料の画像など「見た目」を整えるのが好きなタイプです。AI画像ツールを使いこなせると、Photoshopなしでもスピーディに素材を作れるようになります。',
     courses: [
       {
-        title: 'Photoshopいらず！nano-bananaで写真合成＆デザイン素材を作ろう',
+        title: '【Nano Banana Pro対応】AIクリエイティブ実践講座｜Nano Bananaで0→1の素材・デザインづくり',
         description: 'ブラウザツール「nano-banana」で写真合成や素材づくりを行う実践講座です。',
         url: withCoupon('https://www.udemy.com/course/nano-banana/')
       }

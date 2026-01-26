@@ -174,7 +174,7 @@ const coursesData = [
   },
   {
     id: 7,
-    title: 'Photoshopいらず！nano-bananaで写真合成&デザイン素材を作ろう',
+    title: '【Nano Banana Pro対応】AIクリエイティブ実践講座｜Nano Bananaで0→1の素材・デザインづくり',
     instructor: {
       name: 'こん｜AI Contents Labo, フリーランスの学校',
       avatar: '/images/kon_icon.jpg'
